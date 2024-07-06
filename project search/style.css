@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #9c46c4;
+}
+.box{
+    padding: 0px;
+    height: 50px;
+    width: 400px;
+    display: flex;
+}
+.btn{
+    margin: 0;
+    position: absolute;
+    height: 35px;
+    width: 55px;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.input{
+    margin: 0px;
+    outline: 0;
+    position: relative;
+    width: 45px;
+    height: 30px;
+    
+}
+.box.active .input{
+    width: 200px;
+}
+.box.active .btn{
+    transform: translate(200px);
+    border: 0 10px 0 10px;
+}
